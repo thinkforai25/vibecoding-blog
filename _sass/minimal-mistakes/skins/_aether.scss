@@ -12,7 +12,7 @@ $border-color: mix(#0f172a, $background-color, 12%) !default;
 $code-background-color: #e7f1f9 !default;
 $code-background-color-dark: #d6e5f3 !default;
 $form-background-color: mix(#fff, $background-color, 70%) !default;
-$footer-background-color: mix($primary-color, #0f172a, 12%) !default;
+$footer-background-color: mix(#fff, $primary-color, 82%) !default;
 $link-color: #2fa6b8 !default;
 $link-color-hover: mix(#0f172a, $link-color, 12%) !default;
 $link-color-visited: mix(#0f172a, $link-color, 18%) !default;
@@ -122,6 +122,12 @@ button,
 }
 
 .page__footer {
+  background: linear-gradient(
+      180deg,
+      mix(#fff, $background-color, 94%),
+      mix(#fff, $primary-color, 92%)
+    );
+  border-top: 1px solid mix($border-color, $primary-color, 18%);
   color: #0f172a !important; // ensure readable over light footer
   box-shadow: 0 -6px 24px rgba(#0f172a, 0.06);
 }
