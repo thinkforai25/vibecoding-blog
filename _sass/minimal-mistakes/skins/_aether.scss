@@ -1,0 +1,129 @@
+/* ===========================================================================
+   Aether skin
+   Lightweight, modern palette with a soft tech accent
+   ========================================================================= */
+
+/* Colors */
+$background-color: #f5f9fb !default;
+$text-color: #1e2a36 !default;
+$muted-text-color: #4a5b6b !default;
+$primary-color: #3dc7be !default;
+$border-color: mix(#0f172a, $background-color, 12%) !default;
+$code-background-color: #e7f1f9 !default;
+$code-background-color-dark: #d6e5f3 !default;
+$form-background-color: mix(#fff, $background-color, 70%) !default;
+$footer-background-color: mix($primary-color, #0f172a, 12%) !default;
+$link-color: #2fa6b8 !default;
+$link-color-hover: mix(#0f172a, $link-color, 12%) !default;
+$link-color-visited: mix(#0f172a, $link-color, 18%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#0f172a, $text-color, 12%) !default;
+$navicon-link-color-hover: mix(#0f172a, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 92% !default;
+
+/* aether syntax highlighting (base16) */
+$base00: #0b1220 !default;
+$base01: #1b2433 !default;
+$base02: #2a3545 !default;
+$base03: #566171 !default;
+$base04: #697587 !default;
+$base05: #c8d5e4 !default;
+$base06: #dce6f3 !default;
+$base07: #f5f9fb !default;
+$base08: #ec5f67 !default;
+$base09: #f3ae4e !default;
+$base0a: #ffd18c !default;
+$base0b: #5fbf7f !default;
+$base0c: #58c7d2 !default;
+$base0d: #5b8def !default;
+$base0e: #b38cfa !default;
+$base0f: #e46e8c !default;
+
+body {
+  background-color: $background-color;
+  background-image: radial-gradient(circle at 15% 20%, rgba($primary-color, 0.14), transparent 36%),
+    radial-gradient(circle at 85% 10%, rgba(#7bc8ff, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(#0f172a, 0.03), rgba(#0f172a, 0));
+  color: $text-color;
+}
+
+.masthead {
+  background: linear-gradient(95deg, rgba($primary-color, 0.14), transparent 62%);
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 10px 30px rgba(#0f172a, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.sidebar,
+.page__content,
+.pagination,
+.page__related,
+.page__comments {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 14px;
+  box-shadow: 0 12px 46px rgba(#0f172a, 0.08);
+}
+
+.page__content pre,
+.page__content code,
+.page__content kbd,
+.page__content samp {
+  background-color: $code-background-color;
+  border: 1px solid $border-color;
+  box-shadow: 0 6px 20px rgba(#0f172a, 0.05);
+}
+
+a {
+  text-decoration-color: rgba($link-color, 0.35);
+  text-underline-offset: 0.18em;
+  transition: color 150ms ease, text-decoration-color 150ms ease, box-shadow 150ms ease;
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration-color: rgba($link-color-hover, 0.55);
+    box-shadow: 0 6px 20px rgba($link-color, 0.14);
+  }
+}
+
+.btn,
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.pagination--pager {
+  background: linear-gradient(120deg, rgba($primary-color, 0.95), rgba(#7bc8ff, 0.9));
+  color: #0f172a;
+  border: none;
+  box-shadow: 0 10px 30px rgba($primary-color, 0.28);
+
+  &:hover {
+    background: linear-gradient(120deg, rgba(#7bc8ff, 0.95), rgba($primary-color, 0.95));
+    box-shadow: 0 12px 32px rgba(#7bc8ff, 0.3);
+  }
+}
+
+.notice--primary {
+  background: mix(#fff, $primary-color, $notice-background-mix);
+  border-color: mix(#0f172a, $primary-color, 18%);
+  box-shadow: inset 0 1px 0 rgba(#fff, 0.35);
+}
+
+.page__footer {
+  color: #0f172a !important; // ensure readable over light footer
+  box-shadow: 0 -6px 24px rgba(#0f172a, 0.06);
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+blockquote {
+  border-left: 4px solid mix($link-color, #0f172a, 12%);
+  background: mix(#fff, $primary-color, 94%);
+}
