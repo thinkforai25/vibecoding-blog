@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "zh-TW"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Thinkforai25 - Vibe Coding 筆記"
+title                    : "Vibe Coding 筆記"
 title_separator          : "-"
 subtitle                 : "用 AI 放大思考的學習紀錄"
 name                     : "Vibe Coding 學習者"
