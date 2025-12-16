@@ -15,13 +15,14 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-TW"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Vibe Coding 筆記"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "用 AI 放大思考的學習紀錄"
+name                     : "Vibe Coding 學習者"
+description              : >-
+  我正在學習 vibe coding、嘗試各種 AI 工具與知識管理方法。這個空間用來記錄我如何把 AI 當成「思考放大器」，而不是答案機器；AI 作為第二大腦與思考夥伴。這裡不提供「標準答案」，只記錄我如何反覆修正問題本身。如果你也對「怎麼想」比「怎麼做」更感興趣，那我們應該會聊得來。
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,30 +114,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Vibe Coding 學習者"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "學習 vibe coding，實驗 AI 工具與知識管理，把 AI 當作思考放大器。"
+  location         : "線上"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: "mailto:"
+    - label: "筆記倉庫"
+      icon: "fas fa-fw fa-book"
+      # url: "https://"
 
 # Site Footer
 footer:
@@ -229,7 +218,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Taipei # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
