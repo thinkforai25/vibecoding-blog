@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Kaleidoscope skin
+   A prismatic, iridescent look with layered gradients and glassy panels.
+   ========================================================================== */
+
+/* Colors */
+$background-color: #060a17 !default;
+$text-color: #e7f7ff !default;
+$primary-color: #ff6adf !default;
+$secondary-color: #7ef7c8 !default;
+$border-color: mix($text-color, $background-color, 15%) !default;
+$code-background-color: #0c1b2e !default;
+$code-background-color-dark: #081321 !default;
+$form-background-color: #0f2134 !default;
+$footer-background-color: #0b1424 !default;
+$link-color: $secondary-color !default;
+$link-color-hover: mix($primary-color, #fff, 15%) !default;
+$link-color-visited: mix($secondary-color, #2a1936, 30%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#fff, $background-color, 35%) !default;
+
+/* Notices */
+$notice-background-mix: 86% !default;
+$code-notice-background-mix: 92% !default;
+
+/* Kaleidoscope syntax highlighting (base16) */
+$base00: #0a0f1f !default;
+$base01: #10182b !default;
+$base02: #182441 !default;
+$base03: #213156 !default;
+$base04: #d7e8ff !default;
+$base05: #e7f7ff !default;
+$base06: #f2fbff !default;
+$base07: #ffffff !default;
+$base08: #ff6adf !default;
+$base09: #ffb86c !default;
+$base0a: #ffe16b !default;
+$base0b: #6df0c2 !default;
+$base0c: #56d7ff !default;
+$base0d: #7aa2ff !default;
+$base0e: #c792ff !default;
+$base0f: #ff8ba7 !default;
+
+body {
+  background:
+    radial-gradient(120% 90% at 10% 10%, rgba(255, 106, 223, 0.15), transparent 55%),
+    radial-gradient(120% 90% at 90% 20%, rgba(111, 236, 200, 0.2), transparent 50%),
+    linear-gradient(120deg, rgba(87, 143, 255, 0.12), rgba(12, 27, 46, 0.95) 38%, rgba(255, 118, 176, 0.08)),
+    $background-color;
+  color: $text-color;
+}
+
+.masthead,
+.page__footer {
+  background: linear-gradient(120deg, rgba(255, 106, 223, 0.28), rgba(12, 27, 46, 0.9), rgba(126, 247, 200, 0.22));
+  border-bottom: 1px solid $border-color;
+}
+
+.sidebar,
+.page__hero,
+.page__content,
+.page__footer,
+.page__sidebar,
+.site-nav {
+  backdrop-filter: blur(8px);
+}
+
+.page,
+.sidebar,
+.page__footer {
+  box-shadow: 0 20px 60px rgba(5, 12, 25, 0.45);
+}
+
+.page__title,
+.archive__item-title,
+.author__name {
+  color: $primary-color;
+  text-shadow: 0 10px 40px rgba(255, 106, 223, 0.25);
+}
+
+blockquote {
+  border-image: linear-gradient(135deg, $primary-color, $secondary-color) 1;
+  background: linear-gradient(120deg, rgba(255, 106, 223, 0.12), rgba(126, 247, 200, 0.12));
+  color: $text-color;
+}
+
+code,
+pre {
+  border-radius: 10px;
+}
+
+table {
+  border-color: $border-color;
+
+  th {
+    background: linear-gradient(120deg, rgba(255, 106, 223, 0.18), rgba(87, 143, 255, 0.2));
+    color: $text-color;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(15, 33, 52, 0.7);
+  }
+}
+
+.btn,
+.btn--inverse,
+.pagination--pager {
+  border-radius: 999px;
+  border: 1px solid mix($primary-color, $secondary-color, 45%);
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: $background-color;
+  box-shadow: 0 12px 35px rgba(255, 106, 223, 0.35);
+
+  &:hover {
+    color: $background-color;
+    filter: saturate(1.1) brightness(1.05);
+    transform: translateY(-2px);
+  }
+
+  &:visited {
+    color: $background-color;
+  }
+}
+
+.archive__subtitle {
+  color: mix($text-color, $primary-color, 30%);
+  letter-spacing: 0.08em;
+}
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+.notice {
+  border-radius: 12px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+}
+
+.search-content .ais-hits--item,
+.search-content .ais-hits--item:nth-child(odd) {
+  background: rgba(12, 27, 46, 0.7);
+  border-color: $border-color;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+  color: $text-color;
+  border-radius: 999px;
+  border-color: $border-color;
+}
