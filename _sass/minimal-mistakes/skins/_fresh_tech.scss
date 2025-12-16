@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Fresh Tech skin
+   Modern, airy palette with a light tech feel
+   ========================================================================== */
+
+/* Colors */
+$gray                       : #4c5a63 !default;
+$dark-gray                  : #1f2a32 !default;
+$darker-gray                : #162028 !default;
+$light-gray                 : #d2e5ec !default;
+$lighter-gray               : #ecf5f8 !default;
+
+$body-color                 : #f9fcff !default;
+$background-color           : #f3f8fb !default;
+$code-background-color      : #eef4f7 !default;
+$code-background-color-dark : #dbe8ee !default;
+$text-color                 : $dark-gray !default;
+$border-color               : #e4eef3 !default;
+$form-background-color      : rgba(255, 255, 255, 0.6) !default;
+$footer-background-color    : #e8f1f6 !default;
+
+$primary-color              : #41c7c2 !default;
+$success-color              : #4fb88f !default;
+$warning-color              : #f0b25b !default;
+$danger-color               : #e5727e !default;
+$info-color                 : #7a8bff !default;
+$focus-color                : #3ba7d3 !default;
+$active-color               : mix(#fff, $primary-color, 82%) !default;
+
+/* typography */
+$global-font-family         : 'Inter', 'Noto Sans TC', $neo-grotesque !default;
+$header-font-family         : 'Inter', 'Noto Sans TC', $neo-grotesque !default;
+
+/* links */
+$link-color                 : mix(#102030, $info-color, 12%) !default;
+$link-color-hover           : mix(#0d1a26, $link-color, 20%) !default;
+$link-color-visited         : mix(#f7fbff, $link-color, 15%) !default;
+$masthead-link-color        : $dark-gray !default;
+$masthead-link-color-hover  : mix(#0c1b24, $primary-color, 25%) !default;
+
+/* notices */
+$notice-background-mix      : 92% !default;
+$code-notice-background-mix : 96% !default;
+
+/* accents */
+$border-radius              : 10px !default;
+$box-shadow                 : 0 12px 40px rgba(18, 54, 77, 0.08), 0 1px 0 rgba(255, 255, 255, 0.9) inset !default;
+
+/* subtle tech-inspired background without heavy blocks */
+body {
+  background:
+    radial-gradient(circle at 14% 20%, rgba(65, 199, 194, 0.12), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(122, 139, 255, 0.12), transparent 30%),
+    $body-color;
+  color: $text-color;
+}
+
+/* cards and widgets keep an airy, balanced look */
+.page, .archive, .sidebar, .page__content, .page__meta, .notice, .notice--primary {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid $border-color;
+  box-shadow: $box-shadow;
+}
+
+/* buttons and masthead links retain minimal tech tone */
+.btn, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  background-image: linear-gradient(120deg, $primary-color, $info-color);
+  color: #0f1b24;
+  border: none;
+  box-shadow: 0 10px 24px rgba(59, 167, 211, 0.25);
+}
+
+.btn:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(59, 167, 211, 0.25);
+}
+
+.masthead {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 8px 24px rgba(18, 54, 77, 0.08);
+}
+
+.page__title, .page__content h1, .page__content h2, .page__content h3 {
+  color: $darker-gray;
+  letter-spacing: 0.01em;
+}
+
+blockquote {
+  border-left: 4px solid $primary-color;
+  background-color: rgba(65, 199, 194, 0.08);
+}
+
+code, pre {
+  border-radius: 8px;
+  color: $dark-gray;
+}
+
+.pagination {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid $border-color;
+}
