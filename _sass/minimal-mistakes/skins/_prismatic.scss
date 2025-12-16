@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Prismatic glass skin
+   A neon glassmorphism-inspired palette with layered gradients.
+   ==========================================================================
+*/
+
+/* Colors */
+$background-color: #030713 !default;
+$text-color: #e8f2ff !default;
+$muted-text-color: #9fb5ff !default;
+$primary-color: #8ef3c5 !default;
+$border-color: mix($text-color, $background-color, 12%) !default;
+$code-background-color: #0c1533 !default;
+$code-background-color-dark: #050a1a !default;
+$form-background-color: mix(#203364, $background-color, 55%) !default;
+$footer-background-color: mix($primary-color, $background-color, 20%) !default;
+$link-color: #ff8bf2 !default;
+$link-color-hover: mix(#fff, $link-color, 35%) !default;
+$link-color-visited: mix(#000, $link-color, 30%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix($primary-color, $text-color, 25%) !default;
+$navicon-link-color-hover: mix($primary-color, $background-color, 35%) !default;
+
+/* notices */
+$notice-background-mix: 85% !default;
+$code-notice-background-mix: 90% !default;
+
+/* prismatic syntax highlighting (base16) */
+$base00: #070a14 !default;
+$base01: #10192b !default;
+$base02: #1a2340 !default;
+$base03: #273556 !default;
+$base04: #94b4ff !default;
+$base05: #cfe5ff !default;
+$base06: #f6f9ff !default;
+$base07: #ffffff !default;
+$base08: #ff7fd1 !default;
+$base09: #ffb366 !default;
+$base0a: #f6f08d !default;
+$base0b: #7ff0c9 !default;
+$base0c: #7ae8ff !default;
+$base0d: #9ab2ff !default;
+$base0e: #c6a0ff !default;
+$base0f: #ff9bb6 !default;
+
+body {
+  background:
+    radial-gradient(circle at 15% 18%, rgba(255, 139, 242, 0.25), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(122, 232, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 40% 80%, rgba(255, 190, 122, 0.16), transparent 30%),
+    linear-gradient(135deg, #050915 0%, #080c1c 45%, #030713 100%);
+  color: $text-color;
+}
+
+.masthead,
+.site-nav {
+  background: rgba(8, 14, 31, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.page {
+  background: rgba(7, 12, 26, 0.82);
+  border: 1px solid mix($primary-color, $background-color, 25%);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+}
+
+.page__content a,
+.pagination--pager {
+  text-decoration-color: mix($primary-color, $background-color, 65%);
+  text-decoration-thickness: 0.1em;
+}
+
+.page__content a:hover,
+.pagination--pager:hover {
+  text-decoration-color: $link-color-hover;
+}
+
+.btn,
+.button,
+input[type="submit"],
+button,
+.page__footer-follow .btn {
+  border-radius: 999px;
+  background-image: linear-gradient(120deg, $link-color, $primary-color);
+  color: $text-color;
+  border: 1px solid mix($primary-color, $background-color, 28%);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 0 rgba($primary-color, 0.35);
+  transition: transform 150ms ease, box-shadow 200ms ease;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+    transform: translateY(-1px);
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.45),
+      0 0 0 6px rgba($primary-color, 0.22);
+  }
+}
+
+.post-title,
+.page__title {
+  color: $text-color;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+pre,
+code {
+  border-radius: 12px;
+}
+
+.highlight {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+blockquote {
+  border-color: mix($primary-color, $background-color, 35%);
+  background: rgba($primary-color, 0.05);
+  box-shadow: inset 0 0 0 1px rgba($primary-color, 0.12);
+}
+
+.pagination--pager {
+  color: $text-color;
+  border: 1px solid mix($primary-color, $background-color, 25%);
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.ais-search-box .ais-search-box--input,
+.search-content__form input[type="search"],
+.search-content__form input[type="text"] {
+  background-color: $form-background-color;
+  border-radius: 999px;
+  color: $text-color;
+}
