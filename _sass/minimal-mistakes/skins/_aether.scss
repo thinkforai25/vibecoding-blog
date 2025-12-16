@@ -51,10 +51,14 @@ body {
 }
 
 .masthead {
-  background: linear-gradient(95deg, rgba($primary-color, 0.14), transparent 62%);
-  border-bottom: 1px solid $border-color;
-  box-shadow: 0 10px 30px rgba(#0f172a, 0.08);
-  backdrop-filter: blur(6px);
+  background: linear-gradient(
+      110deg,
+      mix($background-color, $primary-color, 92%),
+      mix(#fff, $background-color, 86%)
+    );
+  border-bottom: 1px solid mix($border-color, $primary-color, 22%);
+  box-shadow: 0 12px 34px rgba(#0f172a, 0.08);
+  backdrop-filter: blur(8px);
 }
 
 .sidebar,
@@ -62,10 +66,14 @@ body {
 .pagination,
 .page__related,
 .page__comments {
-  background-color: #fff;
-  border: 1px solid $border-color;
+  background: linear-gradient(
+      180deg,
+      mix(#fff, $background-color, 88%),
+      mix($background-color, $primary-color, 96%)
+    );
+  border: 1px solid mix($border-color, $primary-color, 18%);
   border-radius: 14px;
-  box-shadow: 0 12px 46px rgba(#0f172a, 0.08);
+  box-shadow: 0 12px 36px rgba(#0f172a, 0.07);
 }
 
 .page__content pre,
@@ -126,4 +134,13 @@ button,
 blockquote {
   border-left: 4px solid mix($link-color, #0f172a, 12%);
   background: mix(#fff, $primary-color, 94%);
+}
+
+.sidebar .author__avatar img,
+.sidebar .author__avatar .author__avatar-wrapper,
+.sidebar .author__content,
+.sidebar .author__urls {
+  background: transparent;
+  border-color: mix($border-color, $primary-color, 18%);
+  box-shadow: none;
 }
