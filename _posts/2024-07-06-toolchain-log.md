@@ -4,7 +4,7 @@ title: "本週使用的 AI 工具鏈實驗"
 date: 2024-07-06 09:00:00 +0800
 categories: [工具箱]
 tags: [工具鏈, 工作流, 實驗記錄]
-author_profile: true
+author_profile: false
 excerpt: >-
   紀錄我如何串接各種 AI 工具，並檢視哪些步驟真正幫助思考、哪些只是炫技。
 ---

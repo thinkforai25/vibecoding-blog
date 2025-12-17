@@ -4,7 +4,7 @@ title: "AI 當第二大腦的三個習慣"
 date: 2024-07-03 09:00:00 +0800
 categories: [知識管理]
 tags: [第二大腦, 習慣, 筆記]
-author_profile: true
+author_profile: false
 excerpt: >-
   我如何讓 AI 成為知識管理的輔助工具：問、存、回看三個節奏。
 ---

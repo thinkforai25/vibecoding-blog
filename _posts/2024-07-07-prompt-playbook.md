@@ -4,7 +4,7 @@ title: "Prompt 遊戲手冊：給未來自己的提醒"
 date: 2024-07-07 09:00:00 +0800
 categories: [工具箱]
 tags: [prompt, 模板, 實驗]
-author_profile: true
+author_profile: false
 excerpt: >-
   常用的 prompt 模板與檢查點，幫助我快速把問題背景講清楚，避免和 AI 鬧誤會。
 ---

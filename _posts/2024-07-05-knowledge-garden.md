@@ -4,7 +4,7 @@ title: "知識管理花園：如何避免資訊堆肥"
 date: 2024-07-05 09:00:00 +0800
 categories: [知識管理]
 tags: [筆記, 整理, 反思]
-author_profile: true
+author_profile: false
 excerpt: >-
   把筆記當花園而非倉庫：定期修剪、重新連結，並讓 AI 提醒我哪些想法該澆水。
 ---
