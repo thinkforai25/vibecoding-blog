@@ -3,6 +3,7 @@ layout: single
 title: "作者資訊"
 permalink: /author-info/
 author_profile: false
+classes: author-info-page
 ---
 
 ## Vibe Coding 學習者
