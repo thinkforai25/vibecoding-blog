@@ -4,7 +4,7 @@ title: "AI 作為思考放大器：我的開場白"
 date: 2024-07-01 09:00:00 +0800
 categories: [思考方法]
 tags: [AI, 思考放大器, 自我對話]
-author_profile: true
+author_profile: false
 excerpt: >-
   為什麼我把 AI 當成思考放大器，而不是答案機器，並且如何用對話讓模糊想法成形。
 ---

@@ -4,7 +4,7 @@ title: "把重複工作交給機器：自動化清單"
 date: 2024-07-09 09:00:00 +0800
 categories: [工作流]
 tags: [自動化, 工作流程, 檢查清單]
-author_profile: true
+author_profile: false
 excerpt: >-
   我目前在實驗的自動化清單，包含筆記整理、檔案命名和回顧提醒，讓思考留給自己。
 ---

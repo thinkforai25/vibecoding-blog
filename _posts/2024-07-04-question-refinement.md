@@ -4,7 +4,7 @@ title: "修正問題本身：迭代提問筆記"
 date: 2024-07-04 09:00:00 +0800
 categories: [思考方法]
 tags: [提問, 迭代, 問題定義]
-author_profile: true
+author_profile: false
 excerpt: >-
   這裡不提供標準答案，只記錄我如何在每次對話中修正問題本身。
 ---

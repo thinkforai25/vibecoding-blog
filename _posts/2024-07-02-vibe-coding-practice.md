@@ -4,7 +4,7 @@ title: "Vibe Coding 練習：把模糊想法變成步驟"
 date: 2024-07-02 09:00:00 +0800
 categories: [工作流]
 tags: [vibe coding, 拆解問題, 實驗]
-author_profile: true
+author_profile: false
 excerpt: >-
   透過 vibe coding 的節奏，從直覺起手，快速確認需求、拆解問題並記錄路徑。
 ---

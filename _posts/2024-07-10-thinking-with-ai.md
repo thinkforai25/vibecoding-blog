@@ -4,7 +4,7 @@ title: "和 AI 對話時的界線：我負責思考，機器負責草稿"
 date: 2024-07-10 09:00:00 +0800
 categories: [思考方法]
 tags: [AI, 對話, 原則]
-author_profile: true
+author_profile: false
 excerpt: >-
   設定和 AI 合作的界線：什麼交給模型，什麼由自己判斷，避免把責任交給演算法。
 ---

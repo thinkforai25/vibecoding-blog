@@ -4,7 +4,7 @@ title: "學習日誌：把疑惑留給明天的自己"
 date: 2024-07-08 09:00:00 +0800
 categories: [學習日誌]
 tags: [反思, 筆記, 習慣]
-author_profile: true
+author_profile: false
 excerpt: >-
   每天收工前，我用 AI 幫忙整理「今天還沒想明白」的清單，留給明天的自己接手。
 ---

@@ -1,4 +1,5 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% assign masthead_author = site.author %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -21,6 +22,19 @@
               >{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          <li class="masthead__menu-item masthead__menu-item--author-info" itemscope itemtype="https://schema.org/Person">
+            <div class="masthead__author-label">作者資訊</div>
+            <div class="masthead__author-name p-name" itemprop="name">{{ masthead_author.name }}</div>
+            {% if masthead_author.location %}
+              <div class="masthead__author-meta" itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+                <span class="p-locality" itemprop="name">{{ masthead_author.location }}</span>
+              </div>
+            {% endif %}
+            {% if masthead_author.bio %}
+              <div class="masthead__author-bio p-note" itemprop="description">{{ masthead_author.bio }}</div>
+            {% endif %}
+          </li>
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
