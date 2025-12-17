@@ -4,3 +4,5 @@ main:
     url: /
   - title: "作者資訊"
     url: /author-info/
+  - title: "場景相簿"
+    url: /vibecoding-scenes/
