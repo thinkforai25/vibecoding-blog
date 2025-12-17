@@ -99,9 +99,27 @@
   font-size: $type-size-6;
   border-inline-start: 1px solid mix(#000, $border-color, 15%);
 
+  .masthead__author-details {
+    margin: 0;
+  }
+
   .masthead__author-label {
+    cursor: pointer;
     font-weight: 700;
     color: $masthead-link-color;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      display: none;
+    }
+
+    &:focus {
+      outline: 2px solid $focus-outline-color;
+      outline-offset: 2px;
+    }
   }
 
   .masthead__author-name {

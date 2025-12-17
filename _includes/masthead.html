@@ -23,17 +23,19 @@
             </li>
           {%- endfor -%}
           <li class="masthead__menu-item masthead__menu-item--author-info" itemscope itemtype="https://schema.org/Person">
-            <div class="masthead__author-label">作者資訊</div>
-            <div class="masthead__author-name p-name" itemprop="name">{{ masthead_author.name }}</div>
-            {% if masthead_author.location %}
-              <div class="masthead__author-meta" itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
-                <span class="p-locality" itemprop="name">{{ masthead_author.location }}</span>
-              </div>
-            {% endif %}
-            {% if masthead_author.bio %}
-              <div class="masthead__author-bio p-note" itemprop="description">{{ masthead_author.bio }}</div>
-            {% endif %}
+            <details class="masthead__author-details">
+              <summary class="masthead__author-label">作者資訊</summary>
+              <div class="masthead__author-name p-name" itemprop="name">{{ masthead_author.name }}</div>
+              {% if masthead_author.location %}
+                <div class="masthead__author-meta" itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                  <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+                  <span class="p-locality" itemprop="name">{{ masthead_author.location }}</span>
+                </div>
+              {% endif %}
+              {% if masthead_author.bio %}
+                <div class="masthead__author-bio p-note" itemprop="description">{{ masthead_author.bio }}</div>
+              {% endif %}
+            </details>
           </li>
         </ul>
         {% if site.search == true %}
